@@ -1,0 +1,21 @@
+.dropdown-container {
+    width: 200px;
+    position: relative;
+  }
+  
+  .dropdown-list {
+    height: 240px;
+    border: 1px solid #ccc;
+    overflow: auto;
+  }
+  
+  .dropdown-item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    color: black;
+    background-color: #f9f9f9;
+  }
+  
+  .dropdown-item input[type="checkbox"] {
+    margin-right: 8px;
+  }

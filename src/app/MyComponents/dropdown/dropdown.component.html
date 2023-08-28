@@ -1,0 +1,10 @@
+<h2 style="text-align: center;">Dropdown</h2>
+<div class="dropdown-container" style="margin: 0 auto;">
+    <cdk-virtual-scroll-viewport itemSize="40"class="dropdown-list">
+        <div *cdkVirtualFor="let item of items; let i = index" class="dropdown-item">
+            <input type="checkbox" [id]="'checkbox-' + i" [checked]="item.checked" (change)="toggleItem(i); openDialog(item.text)">
+            <label [for]=" 'checkbox-' + i ">{{item.text}}</label>
+            
+        </div>
+    </cdk-virtual-scroll-viewport>
+</div>
